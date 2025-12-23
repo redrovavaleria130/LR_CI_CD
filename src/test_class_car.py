@@ -16,5 +16,5 @@ class TestCase(unittest.TestCase):
         # Заправим 20 литров
         self.car.refuel_car(20)
         assert self.car.get_current_fuel_level() == 20
-        # Проверим, что будет исключение, если перельем
+        # Проверим, что будет исключение, если перельеm
         self.assertRaises(Exception, lambda: self.car.refuel_car(80))
